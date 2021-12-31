@@ -158,5 +158,86 @@ p.className1.className2 {
     color:orange;    
 }
 ```
-
+---
 # The Box Model
+
+<img src="./Markdown_images/boxModel.png" alt="Box Model">
+
+Margin - is area outside of element, **never** has color **always** transparent
+
+Border - extends around the element, outer edge of any padding. Can be several colors, types, widths.
+
+Padding - exists around the content and inherits background color of content element
+
+
+
+## **margin**
+margin - sets margin as a single property (top, right, bottom, left) *to the outside of an element
+```css
+margin: 15px; /* one value sizes all the margins */
+margin: 15px 15px; /* two values sizes top/bottom and right/left */
+margin: 15px 15px 15px; /* 3 values sizes top, left/right, and bottom margin */
+margin: 15px 15px 15px 15px; /* 4 values sizes top, right, bottom, left */
+```
+
+## **border**
+similar to margin, you can set border-(top,right,bottom,left)
+
+```css
+border: <border-width> <border-style> <border-color>; /* Can also be set individually*/
+border-style: dotted;
+border-width: 10px
+border-color: black;
+border-top: 2px solid red;
+border-right: none; 
+border-bottom: 1px dashed aqua;
+border-left: 5px dashed #000;
+
+```
+
+> border-styles
+>> solid | none | dashed | dotted | double | groove | ridge 
+>>
+>> hidden - `draws border but does not display` | 
+>>
+>> inset - `adds a slight bevel to make the element slightly depressed` | 
+>>
+>> outset - `add a slight bevel to make the element raised`
+
+ #### **`outline` act like borders except they do not take up any space**
+
+## **padding**
+similar to using margin, but **padding** adds space inside the element
+
+## **position**
+
+> `relative` positioning is relative to the `HTML` flow; like checkers on a board the css boxes are arranged left to right, and when it gets to the edge you go to the next row.
+
+> `absolute` positioning allows setting the exact positioning of `HTML` content on a page, relative to the parent element. 
+>
+> *to counter overlap use `z-index` to determine which element goes on top and bottom*
+
+> `fixed` positioning is relative to the browser window
+
+> `static` positioning is placed as it appears in the normal `HTML` flow; **this is  default**
+
+> `sticky` positioning causes the element to toggel between `relative` and `fixed` depending on the scroll position. It is `relative` until a scrolling offset is reached then it is `fixed`
+
+```css
+/* elements with block value are automatically placed on new row */
+display: block; 
+/* elements with inline value are placed on the same row, immediately next to the element preceding them. */
+display: inline;
+/* elements with inline-block value are placed on the same row as other inline elements, but they can have width and height associated with them, whereas inline cannot */
+display: inline-block;
+
+
+/* 
+* Specify positioning after type of positioning 
+* applys to all types except static 
+*/
+left:
+right:
+top:
+bottom:
+```
