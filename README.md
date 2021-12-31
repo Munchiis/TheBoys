@@ -211,17 +211,17 @@ similar to using margin, but **padding** adds space inside the element
 
 ## **position**
 
-> `relative` positioning is relative to the `HTML` flow; like checkers on a board the css boxes are arranged left to right, and when it gets to the edge you go to the next row.
+`relative` positioning is relative to the `HTML` flow; like checkers on a board the css boxes are arranged left to right, and when it gets to the edge you go to the next row.
 
-> `absolute` positioning allows setting the exact positioning of `HTML` content on a page, relative to the parent element. 
->
-> *to counter overlap use `z-index` to determine which element goes on top and bottom*
+ `absolute` positioning allows setting the exact positioning of `HTML` content on a page, relative to the parent element. 
 
-> `fixed` positioning is relative to the browser window
+ *to counter overlap use `z-index` to determine which element goes on top and bottom*
 
-> `static` positioning is placed as it appears in the normal `HTML` flow; **this is  default**
+`fixed` positioning is relative to the browser window
 
-> `sticky` positioning causes the element to toggel between `relative` and `fixed` depending on the scroll position. It is `relative` until a scrolling offset is reached then it is `fixed`
+`static` positioning is placed as it appears in the normal `HTML` flow; **this is  default**
+
+`sticky` positioning causes the element to toggel between `relative` and `fixed` depending on the scroll position. It is `relative` until a scrolling offset is reached then it is `fixed`
 
 ```css
 /* elements with block value are automatically placed on new row */
@@ -236,8 +236,8 @@ display: inline-block;
 * Specify positioning after type of positioning 
 * applys to all types except static 
 */
-left:
-right:
-top:
-bottom:
+left: ;
+right: ;
+top: ;
+bottom: ;
 ```
