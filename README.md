@@ -145,7 +145,6 @@ p + p {
 > `.className`
 
 ```css
-
 #id {
     color:blue;
 }
@@ -160,3 +159,4 @@ p.className1.className2 {
 }
 ```
 
+# The Box Model
